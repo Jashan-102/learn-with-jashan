@@ -1,3 +1,21 @@
-.myname {
-  color: red;
+h3 {
+  font-size: 30px;
+}
+
+p,
+span,
+code {
+  font-size: 20px;
+}
+
+span {
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1140px !important;
+}
+
+li {
+  font-size: 20px;
 }
