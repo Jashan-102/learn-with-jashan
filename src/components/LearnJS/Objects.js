@@ -94,6 +94,69 @@ function ObjectsJS() {
       <p>
         <code>...</code> these three dots are spread operator. These lead to
         spread elements.
+        <br />
+        without <code>...</code> dots - result will be, it will return whole
+        array
+        <br />
+        <strong>In object</strong>
+        <br />
+        Inside object as same name keys are not allowed, if their is, then last
+        occurred will considered means its value override.
+        <br />
+        <code>const newobjs = {"{ ...obj, ...obj2 }"};</code>
+        <br />
+        Incase if both obj having same key then last occurring override first
+        one.
+      </p>
+      <h3>Object Destructing:</h3>
+      <p>
+        By default variable name should be same as key name:
+        <br />
+        <code>let {"{ name, age, ...restItems }"} = person;</code>
+        <br />
+        To use d/f variable name (key: variableName):
+        <br />
+        <code>
+          let {"{ name: personName, age: personAge, ...restItems }"} = person;
+        </code>
+        <br />
+        RestItems: It will store rest items by using spread operator, which we
+        don't wanna to Destruct as variable.
+      </p>
+      <h3>Object inside array:</h3>
+      <p>
+        These are very useful in real-world as we use objects inside arrays.
+        <br />
+        <code>
+          const users = [<br />
+          {'  { userId: "1", userName: "Jashan", gender: "Female" },'}
+          <br />
+          {'  { userId: "2", userName: "Maninder", gender: "Male" },'}
+          <br />
+          ];
+          <br /> const [user1, user2, user3, user4] = users;
+          <br />
+          console.log(user2.userName);
+        </code>
+        <br />
+        Nested Destructuring: Take out an particular value of any user
+        <br />
+        extracting 2 props from an object
+        <br />
+        <code>
+          const [<br />
+          {"{ userName: user1Name , userId }"},<br />
+          {"{ userName: user2Name }"},<br />
+          {" { gender: user3Gender }"},<br />
+          ] = users;
+          <br />
+          console.log(user1Name, ",", userId);
+          <br />
+          console.log(user2Name);
+          <br />
+          console.log(user3Gender);
+          <br />
+        </code>
       </p>
     </>
   );

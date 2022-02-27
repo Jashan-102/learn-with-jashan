@@ -1,6 +1,7 @@
 import AboutArrays from "./AboutArrays";
 import JSBasic from "./JSBasic";
 import ObjectsJS from "./Objects";
+import JSFunctions from "./Functions";
 
 function LearnJS() {
   return (
@@ -10,6 +11,7 @@ function LearnJS() {
       <JSBasic />
       <AboutArrays />
       <ObjectsJS />
+      <JSFunctions />
     </>
   );
 }
