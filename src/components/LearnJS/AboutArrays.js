@@ -5,7 +5,8 @@ function AboutArrays() {
       <p>
         Arrays are ordered collection of items.
         <br />
-        Array is a Reference Data Type.
+        Array is a Reference Data Type. It is preferable to use "const" while
+        defining Reference Type.
       </p>
       <ol className="">
         <li>Arrays are Reference Data Type</li>
@@ -63,8 +64,51 @@ function AboutArrays() {
       </div>
 
       <div>
-        <h3>Loop in Array</h3>
+        <h3>Loops in Array:</h3>
+        <ol>
+          <li>for</li>
+          <li>while</li>
+          <li>do while</li>
+          <li>for of</li>
+          <li>for in</li>
+        </ol>
+        <p>
+          <strong>-"for of" Loop: </strong>This loop lead reduce repeated.This
+          loop will run as much values are present in var.
+          <code>
+            <br /> for (const myLoopArray of arr)
+            <br />
+            {"console.log(myLoopArray)"}
+          </code>
+          <br />
+          This loop took single single value of array "arr" and place one by one
+          in variable "myLoopArray".
+          <br />
+          O/P
+        </p>
+        <p>
+          <strong>-"for in" Loop: </strong>This loop basically give us index of
+          arr. It store index only not value.
+          <code>
+            <br /> for (const myLoopArray in arr)
+            <br />
+            {"console.log(myLoopArray)"}
+          </code>
+          <br />
+          This loop took single single index of array "arr" and place one by one
+          in variable "myLoopArray".
+          <br />
+          O/P
+        </p>
       </div>
+      <h3>Array Destructing: </h3>
+      <p>
+        Introduced in ES6
+        <br />
+        Array Destructing means store single-2 array value in d/f variables
+        <br />
+        <code>let [arrvalue1, , arrvalue2, ...restArrValues] = arr;</code>
+      </p>
     </section>
   );
 }

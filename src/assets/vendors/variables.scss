@@ -1,0 +1,21 @@
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  2: $spacer * 0.125,
+  4: $spacer * 0.25,
+  6: $spacer * 0.375,
+  10: $spacer * 0.625,
+  12: $spacer * 0.75,
+  14: $spacer * 0.875,
+  16: $spacer,
+  18: $spacer * 1.125,
+  20: $spacer * 1.25,
+  24: $spacer * 1.5,
+  28: $spacer * 1.75,
+  30: $spacer * 1.875,
+  34: $spacer * 2.125,
+  60: $spacer * 3.75,
+  80: $spacer * 5,
+  100: $spacer * 6.25,
+);
