@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import LearnJS from "../Learning/LearnJS/LeranJS";
-import Home from "../Home/Home";
-import LearnSCSS from "../Learning/LearnSCSS/LearnSCSS";
-import CovidTracker from "../Projects/CovidTracker/CovidTracker";
-import Learning from "../Learning/Learning";
-import Projects from "../Projects/Projects";
+import LearnJS from "../../Learning/LearnJS/LeranJS";
+import Home from "../../Home/Home";
+import LearnSCSS from "../../Learning/LearnSCSS/LearnSCSS";
+import CovidTracker from "../../Projects/CovidTracker/CovidTracker";
+import Learning from "../../Learning/Learning";
+import Projects from "../../Projects/Projects";
+import StripeWithReact from "../../Blogs/StripeWithReact";
 
 function MyRoutes() {
   return (
@@ -18,6 +19,10 @@ function MyRoutes() {
       <Route path="/learning/learn-js" element={<LearnJS />} />
 
       <Route path="/projects/covid-tracker" element={<CovidTracker />} />
+
+
+      <Route path="/blog/stripe-with-react" element={<StripeWithReact />} />
+
 
     </Routes>
   );
