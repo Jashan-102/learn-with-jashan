@@ -2,7 +2,7 @@ import React from "react";
 
 export default function StripeWithReact() {
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <h1>Stripe With React</h1>
  
  <div>

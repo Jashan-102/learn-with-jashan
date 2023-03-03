@@ -6,6 +6,7 @@ import CovidTracker from "../../Projects/CovidTracker/CovidTracker";
 import Learning from "../../Learning/Learning";
 import Projects from "../../Projects/Projects";
 import StripeWithReact from "../../Blogs/StripeWithReact";
+import LearnReact from "../../Learning/Learn React/LearnReact";
 
 function MyRoutes() {
   return (
@@ -17,9 +18,12 @@ function MyRoutes() {
 
       <Route path="/learning/learn-scss" element={<LearnSCSS />} />
       <Route path="/learning/learn-js" element={<LearnJS />} />
+      <Route path="/learning/learn-react-js" element={<LearnReact />} />
 
       <Route path="/projects/covid-tracker" element={<CovidTracker />} />
 
+
+      
 
       <Route path="/blog/stripe-with-react" element={<StripeWithReact />} />
 

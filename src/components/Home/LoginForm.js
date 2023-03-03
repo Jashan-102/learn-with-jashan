@@ -14,7 +14,7 @@ export default function LoginForm() {
     }
   };
   return (
-    <form onSubmit={handleLoginSubmit} className="container">
+    <form onSubmit={handleLoginSubmit} className="container mx-auto">
       <label>Enter email</label>
       <br />
       <input type="text" onChange={(e) => setMyEmail(e.target.value)} /> <br />

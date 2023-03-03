@@ -1,4 +1,4 @@
-import "bootstrap";
+// import "bootstrap";
 import "./App.scss";
 import MyRoutes from "./components/Other/routes/MyRoutes";
 
