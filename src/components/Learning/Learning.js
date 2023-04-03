@@ -1,19 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Card from "../Other/Card";
 
 export default function Learning() {
   return (
-    <div className="container mx-auto mx-auto">
-      <Link to="/learning/learn-js" className="me-4 pe-4">
-        Learn JS
-        
-      </Link>
-      <Link to="/learning/learn-scss" className="me-4">
-        Learn SCSS
-      </Link>
-      <Link to="/learning/learn-react-js" className="me-4">
-        Learn React JS
-      </Link>
+    <div className="container mx-auto">
+      <Card
+        cardTitle='Learn JS'
+        cardDescription='will add soon'
+        linkTo='/learning/learn-js'
+        buttonClasses=""
+        wrapperClasses=""
+      />
+      <Card
+        cardTitle='Learn SCSS'
+        cardDescription='will add soon'
+        linkTo='/learning/learn-scss'
+        buttonClasses=""
+        wrapperClasses=""
+      />
+      <Card
+        cardTitle='Learn React JS'
+        cardDescription='will add soon'
+        linkTo='/learning/learn-react-js'
+        buttonClasses=""
+        wrapperClasses=""
+      />
     </div>
   );
 }

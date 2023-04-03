@@ -1,11 +1,11 @@
-import React from "react";
-import NavBar from "../Other/NavBar";
-import LoginForm from "./LoginForm";
+import React, { useState } from "react";
+import GoogleLoginPage from "./LoginForm";
 function Home() {
+  const [userData, setUserData] = useState(sessionStorage.getItem("userData"));
   return (
     <>
-      <LoginForm />
-      <NavBar />
+      <h1>  hi</h1>
+      <GoogleLoginPage userData={userData} setUserData={setUserData} />
     </>
   );
 }

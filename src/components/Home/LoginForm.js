@@ -1,30 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { useGoogleLogin } from '@react-oauth/google';
+import axios from 'axios';
+import GoogleImg from '../../assets/imgs/google.png';
 
-export default function LoginForm() {
-  const [myEmail, setMyEmail] = useState("");
-  const [myPassword, setMyPassword] = useState("");
+const GoogleLoginPage = (props) => {
+  const [user, setUser] = useState([]);
+  const { userData, setUserData } = props
+debugger
+  const login = useGoogleLogin({
+    onSuccess: (codeResponse) => {
+      sessionStorage.setItem("googleAuth", JSON.stringify(codeResponse));
+      return setUser(codeResponse)
+    },
+    onError: (error) => console.log('Login Failed:', error),
+  });
 
-  const handleLoginSubmit = () => {
-    debugger;
-    if (
-      myEmail === "learnwithjashandeep@gmail.com" &&
-      myPassword === "password1"
-    ) {
-      alert("ypu are ")
-    }
-  };
-  return (
-    <form onSubmit={handleLoginSubmit} className="container mx-auto">
-      <label>Enter email</label>
-      <br />
-      <input type="text" onChange={(e) => setMyEmail(e.target.value)} /> <br />
-      <br />
-      <label>Enter password</label>
-      <br />
-      <input type="password" onChange={(e) => setMyPassword(e.target.value)} />
-      <br />
-      <br />
-      <button type="submit">Submit</button>
-    </form>
+
+  useEffect(
+    () => {
+      if (user) {
+        axios
+          .get(`https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`, {
+            headers: {
+              Authorization: `Bearer ${user.access_token}`,
+              Accept: 'application/json'
+            }
+          })
+          .then((res) => {
+            setUserData(res.data)
+            sessionStorage.setItem("userData", JSON.stringify(res.data));
+          })
+          .catch((err) => console.log(err));
+      }
+    },
+    [user]
   );
+
+  return (
+    <div>
+      {userData ? '' : (
+        <button className='btn border rounded-pill px-5 py-4 sign-up-btn' onClick={() => login()}>
+          <img className='me-2' alt="google-logo" src={GoogleImg} />
+          Sign in with Google</button>
+      )}
+    </div>
+  )
 }
+export default GoogleLoginPage;

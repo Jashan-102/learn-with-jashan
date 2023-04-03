@@ -9,7 +9,6 @@ export default function State() {
         <li>React State v/s JS variable:</li>
         <ol>
           <li>On React State update, State inform Component that some update happens whereas JS variable can't.</li>
-          
         </ol>
       </ul>
     </div>
