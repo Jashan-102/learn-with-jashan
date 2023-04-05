@@ -1,7 +1,7 @@
 function JSFunctions() {
   return (
     <>
-      <h3>Function in JS:</h3>
+      <h3 className="h3">Function in JS:</h3>
       <ol>
         <li>Functions are to perform some task.</li>
         <li>

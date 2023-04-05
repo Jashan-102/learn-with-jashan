@@ -3,7 +3,7 @@ import Card from "../Other/Card";
 
 export default function Learning() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
       <Card
         cardTitle='Learn JS'
         cardDescription='will add soon'

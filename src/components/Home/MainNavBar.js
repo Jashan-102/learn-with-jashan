@@ -11,6 +11,7 @@ export default function MainNavBar(props) {
         <div>
           <NavLink to="/blogs" className="mr-6">Blogs</NavLink>
           <NavLink to="/learning" className="mr-6">Learn</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

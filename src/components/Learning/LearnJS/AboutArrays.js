@@ -1,77 +1,57 @@
+import CopyContainer from "../../Other/CopyContainer";
+import Note from "../../Other/Note";
+
 function AboutArrays() {
   return (
     <section>
-      <h3>Arrays in JS</h3>
+      <h3 className="h3">Arrays in JS</h3>
       <p>
-        Arrays are ordered collection of items.
-        <br />
-        Array is a Reference Data Type. It is preferable to use "const" while
+        Arrays are ordered collection of items. Array is a Reference Data Type. It is preferable to use "const" while
         defining Reference Type.
       </p>
-      <ol className="">
+      <ol className="list-decimal list-inside">
         <li>Arrays are Reference Data Type</li>
         <li>Ordered Collection of items</li>
-        <li>Arrays defined inside square brackets{"[]"}</li>
+        <li>Arrays defined inside square brackets: {"[1,2,3]"}</li>
         <li>You can store any data type in Array: null, string, undefined</li>
         <li>Arrays are mutable, means you can change an Array value</li>
-        <li>
-          Proper way to ensure typeof an Array:{" "}
-          <code>Array.isArray(arrname)</code>
-        </li>
+        <li>To check typeof an Array:<CopyContainer copyText="Array.isArray(arrayName)" /></li>
       </ol>
-      <h3>Array Methods:</h3>
-      <ul>
+      <h6 className="h6">Array Methods:</h6>
+      <ul className="list-decimal list-inside">
         <li>
-          push <code>arr.push("new array"): </code> Add new array at the end.
+          push <CopyContainer copyText='arr.push("new array")' /> Add new array at the end.
         </li>
         <li>
-          pop <code>arr.pop("new array"): </code> Add new array at the end.Also
+          pop <CopyContainer copyText='arr.pop("new array")' /> Add new array at the end.Also
           You can sore poped value into a variable.
         </li>
         <li>
-          unshift: <code>arr.unshift("new item"): </code>Add value in the
+          unshift: <CopyContainer copyText='arr.unshift("new item")' />Add value in the
           starting of array
         </li>
         <li>
-          shift: <code>arr.shift(): </code>Remove value from starting of array.
-          As
-          <code>pop</code> it also return deleted value.
+          shift:  <CopyContainer copyText='arr.shift()' />: Remove value from starting of array.
+          Like <strong>pop</strong> it also return deleted value.
         </li>
-        <p>
-          <strong>Note: </strong>
-          <code>push and pop</code> are fast as compare to{" "}
-          <code>shift and unshift</code>. Because{" "}
-          <code>shift and unshift </code>firstly shift the element from the
-          starting then add themselves in the beginning.
-        </p>
+        <Note
+          note="push and pop are fast as compare to shift and unshift. Because shift and unshift firstly shift the element from the starting then add or remove themselves in the beginning."
+        />
       </ul>
+      <h6 className="h6">How to clone OR copy an array:</h6>
+      <span>You can clone an array with 2-3 ways:</span>
+      <ol className="list-decimal list-inside">
+        <li>
+          slice method: <CopyContainer copyText="const cloneingArray = arr.slice(0)" />
+        </li>
+        <li>concat method: <CopyContainer copyText="const cloneingArray = [].concat(arr)" /></li>
+        <li>
+          spread operator: <CopyContainer copyText="const cloneingArray = [...arr]" />
+        </li>
+      </ol>
 
       <div>
-        <h3>How to clone OR copy an array:</h3>
-        <span>You can clone an array with 2-3 ways</span>
-        <ol>
-          <li>
-            Slice method: <code>const cloneingArray = arr.slice(0)</code>
-          </li>
-          <li>
-            concat method: <code>const cloneingArray = [].concat(arr)</code>{" "}
-          </li>
-          <li>
-            spread operator: <code> const cloneingArray = [...arr]</code>
-          </li>
-        </ol>
-        <div></div>
-      </div>
-
-      <div>
-        <h3>Loops in Array:</h3>
-        <ol>
-          <li>for</li>
-          <li>while</li>
-          <li>do while</li>
-          <li>for of</li>
-          <li>for in</li>
-        </ol>
+        <h6 className="h6">Loops in Array:</h6>
         <p>
           <strong>-"for of" Loop: </strong>This loop lead reduce repeated.This
           loop will run as much values are present in var.
@@ -86,6 +66,7 @@ function AboutArrays() {
           <br />
           O/P
         </p>
+
         <p>
           <strong>-"for in" Loop: </strong>This loop basically give us index of
           arr. It store index only not value.

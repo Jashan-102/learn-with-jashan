@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Card(props) {
   const { buttonClasses, wrapperClasses, linkTo, cardDescription, cardTitle } = props
   return (
-    <div className={`card w-96 bg-base-100 shadow-xl my-6 ${wrapperClasses}`}>
+    <div className={`card w-96 bg-base-100 shadow-xl space-y-6 ${wrapperClasses}`}>
       <div className={`card-body`}>
         <h2 className="card-title">{cardTitle}</h2>
         <p>{cardDescription}</p>

@@ -1,7 +1,8 @@
 function ObjectsJS() {
+
   return (
     <>
-      <h3>Objects in JS:</h3>
+      <h3 className="h3">Objects in JS:</h3>
       <ul>
         <li>Objects are of Reference Type</li>
         <li>Arrays are good but not sufficient for real world data</li>

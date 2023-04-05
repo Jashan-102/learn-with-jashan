@@ -6,9 +6,8 @@ import JSFunctions from "./Functions";
 function LearnJS() {
   return (
     <div className="container mx-auto">
-      <h1 className="text-center">Learn JS</h1>
-      <h2 className="text-center">This is to LearnJS</h2>
-      <JSBasic />
+      <h1 className="text-center h1">Learn JavaScript</h1>
+      {/* <JSBasic /> */}
       <AboutArrays />
       <ObjectsJS />
       <JSFunctions />
