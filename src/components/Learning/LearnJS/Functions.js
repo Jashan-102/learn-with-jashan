@@ -1,6 +1,6 @@
 function JSFunctions() {
   return (
-    <>
+    <section id="js-functions">
       <h3 className="h3">Function in JS:</h3>
       <ol>
         <li>Functions are to perform some task.</li>
@@ -126,7 +126,7 @@ function JSFunctions() {
           LexicalScopp();
         </code>
       </p>
-    </>
+    </section>
   );
 }
 

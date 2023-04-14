@@ -1,16 +1,18 @@
+import CopyContainer from "../../Other/CopyContainer";
+
 function ObjectsJS() {
 
   return (
-    <>
+    <section id="js-objects">
       <h3 className="h3">Objects in JS:</h3>
-      <ul>
+      <ul className="list-decimal list-inside">
         <li>Objects are of Reference Type</li>
         <li>Arrays are good but not sufficient for real world data</li>
         <li>Objects store data in Key: "value" pairs</li>
         <li>Objects don't have index</li>
         <li>Object's Key also known as property</li>
         <li>
-          Objects Creating also know as Object Literals i.e by using {"{}"}-
+          Objects Creating also know as Object Literals i.e by using-
           currly braces
         </li>
         <li>
@@ -27,14 +29,16 @@ function ObjectsJS() {
         </li>
       </ul>
 
-      <h3>D/F b/w dot(.) and bracket([]) Notation:</h3>
-      <ol>
+      <h6 className="h6">D/F b/w dot(.) and bracket([ ]) Notation:</h6>
+      <ol className="list-decimal list-inside">
         <li>
           You can't access split word by using dot Notation.
           <br />
-          <code>(objectName.split word) </code>Not work in this case
+          Not work in this case
+          <CopyContainer copyText="(objectName.split word)" />
           <br />
-          <code>(objectName[split word]) </code>Work in this case
+          Work in this case
+          <CopyContainer copyText="(objectName[split word])" />
         </li>
         <li>
           basically bracket Notation will compute the value of key and return
@@ -45,58 +49,30 @@ function ObjectsJS() {
           the variable. In that case bracket Notation will work
         </li>
       </ol>
-      <h3>How to iterate object:</h3>
-      <strong>Mainly two ways we use to iterate Objects:</strong>
-      <ol>
-        <li>for in loop</li>
-        <li>Object.Keys</li>
-      </ol>
+      <h6 className="h6">How to iterate object:</h6>
+      <p>Mainly two ways we use to iterate Objects:</p>
+      <h6 className="h6">for in loop</h6>
+      <CopyContainer copyText={` for (let keys in person) {"{console.log(keys, ':', person[keys]);}"}`} />
+      <p>person[keys] will compute value of Object person's Key </p>
+      <h6 className="h6">Object.Keys</h6>
+      <CopyContainer copyText={`for (let keyss of Object.keys(person)){"{console.log(keyss, ':', person[keyss]);}"}`} />
+      <p>person[keys] will compute value of Object person's Key</p>
+      <h6 className="h6">Computed property in objects:</h6>
       <p>
-        <strong>for in loop</strong>
-        <br />
-        <code>
-          for (let keys in person)
-          <br /> {"{console.log(keys, ':', person[keys]);}"}
-        </code>
-        <br />
-        person[keys] will compute value of Object person's Key
+        [ ]- This is know for computed property
       </p>
+      <CopyContainer copyText={`const key1 = "obbj1"; const obj = {[key1] : 'value1'}`} />
+      <span>OR</span>
+      <CopyContainer copyText={` const key1 = "obbj1"; const obj = {"{}"} obj[key1] : 'value1'`} />
+      <h6 className="h6">Spread operator in Object</h6>
+      <br />
+      <br />
+      <br />
       <p>
-        <strong>Object.Keys</strong>
-        <br />
-        <code>
-          for (let keyss of Object.keys(person))
-          <br /> {"  {console.log(keyss, ':', person[keyss]);}"}
-        </code>
-        <br />
-        person[keys] will compute value of Object person's Key
-      </p>
-      <h3>Computed property in objects:</h3>
-      <p>
-        [ ]- is computed property
-        <br />
-        <code>
-          const key1 = "obbj1";
-          <br />
-          const obj = {"{[key1] : 'value1'}"}
-        </code>
-        <br />
-        OR
-        <br />
-        <code>
-          const key1 = "obbj1";
-          <br />
-          const obj = {"{}"}
-          <br />
-          obj[key1] : 'value1'
-        </code>
-      </p>
-      <h3>Spread operator in Object</h3>
-      <p>
-        <code>...</code> these three dots are spread operator. These lead to
+        <strong>( ... )</strong> these three dots are spread operator. These lead to
         spread elements.
         <br />
-        without <code>...</code> dots - result will be, it will return whole
+        Without <code>...</code> dots - result will be, it will return whole
         array
         <br />
         <strong>In object</strong>
@@ -109,7 +85,7 @@ function ObjectsJS() {
         Incase if both obj having same key then last occurring override first
         one.
       </p>
-      <h3>Object Destructing:</h3>
+      <h6 className="h6">Object Destructing:</h6>
       <p>
         By default variable name should be same as key name:
         <br />
@@ -159,7 +135,7 @@ function ObjectsJS() {
           <br />
         </code>
       </p>
-    </>
+    </section>
   );
 }
 

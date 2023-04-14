@@ -1,9 +1,11 @@
 import CopyContainer from "../../Other/CopyContainer";
 import Note from "../../Other/Note";
+import CodeImg from "../../../assets/imgs/learning/js/code.png";
+import PushArrayImg from "../../../assets/imgs/learning/js/code1.png";
 
-function AboutArrays() {
+function AboutArrays(props) {
   return (
-    <section>
+    <section id="js-arrays">
       <h3 className="h3">Arrays in JS</h3>
       <p>
         Arrays are ordered collection of items. Array is a Reference Data Type. It is preferable to use "const" while
@@ -15,12 +17,12 @@ function AboutArrays() {
         <li>Arrays defined inside square brackets: {"[1,2,3]"}</li>
         <li>You can store any data type in Array: null, string, undefined</li>
         <li>Arrays are mutable, means you can change an Array value</li>
-        <li>To check typeof an Array:<CopyContainer copyText="Array.isArray(arrayName)" /></li>
+        <li>To check typeof an Array:<CopyContainer copyText="Array.isArray(arrayName)" imgSrc={CodeImg} /></li>
       </ol>
       <h6 className="h6">Array Methods:</h6>
       <ul className="list-decimal list-inside">
         <li>
-          push <CopyContainer copyText='arr.push("new array")' /> Add new array at the end.
+          push <CopyContainer copyText='arr.push("new array")' imgSrc={PushArrayImg} /> Add new array at the end.
         </li>
         <li>
           pop <CopyContainer copyText='arr.pop("new array")' /> Add new array at the end.Also
@@ -49,46 +51,30 @@ function AboutArrays() {
           spread operator: <CopyContainer copyText="const cloneingArray = [...arr]" />
         </li>
       </ol>
-
       <div>
-        <h6 className="h6">Loops in Array:</h6>
+        <h6 className="h6 my-4">Loops in Array:</h6>
+        <h6 className="h6">1. "for of" Loop:</h6>
         <p>
-          <strong>-"for of" Loop: </strong>This loop lead reduce repeated.This
-          loop will run as much values are present in var.
-          <code>
-            <br /> for (const myLoopArray of arr)
-            <br />
-            {"console.log(myLoopArray)"}
-          </code>
-          <br />
+          This loop lead reduce repeated.This loop will run as much values are present in var.<br />
           This loop took single single value of array "arr" and place one by one
           in variable "myLoopArray".
-          <br />
-          O/P
         </p>
-
+        <CopyContainer copyText='for (const myLoopArray of arr) { console.log(myLoopArray)}' />
+        <h6 className="h6">2. "for in" Loop:</h6>
         <p>
-          <strong>-"for in" Loop: </strong>This loop basically give us index of
-          arr. It store index only not value.
-          <code>
-            <br /> for (const myLoopArray in arr)
-            <br />
-            {"console.log(myLoopArray)"}
-          </code>
-          <br />
+          This loop basically give us index of arr. It store index only not value.<br />
           This loop took single single index of array "arr" and place one by one
           in variable "myLoopArray".
-          <br />
-          O/P
         </p>
+        <CopyContainer copyText='for (const myLoopArray in arr) {console.log(myLoopArray)}' />
       </div>
-      <h3>Array Destructing: </h3>
+      <h6 className="h6">Array Destructing: </h6>
       <p>
-        Introduced in ES6
+        Array Destructing concept is introduced in ES6.
         <br />
         Array Destructing means store single-2 array value in d/f variables
         <br />
-        <code>let [arrvalue1, , arrvalue2, ...restArrValues] = arr;</code>
+        <CopyContainer copyText='let [arrvalue1, , arrvalue2, ...restArrValues] = arr;' />
       </p>
     </section>
   );

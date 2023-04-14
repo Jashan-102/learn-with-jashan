@@ -1,8 +1,8 @@
 import Note from "../../Other/Note";
 
-function JSBasic() {
+function JSBasic(props) {
   return (
-    <>
+    <section id="js-basics">
       <h3 className="h3">Basics of JS:</h3>
       <div>
         <h4 className="h4">Variables:</h4>
@@ -29,7 +29,7 @@ function JSBasic() {
           Address related to it will show that.
         </p>
       </div>
-    </>
+    </section>
   );
 }
 export default JSBasic;
