@@ -1,25 +1,24 @@
-import { Routes, Route } from "react-router-dom";
-import LearnJS from "../../Learning/LearnJS/LeranJS";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../../Home/Home";
-import LearnSCSS from "../../Learning/LearnSCSS/LearnSCSS";
 import CovidTracker from "../../Projects/CovidTracker/CovidTracker";
-import Learning from "../../Learning/Learning";
 import Projects from "../../Projects/Projects";
 import StripeWithReact from "../../Blogs/StripeWithReact";
-import LearnReact from "../../Learning/Learn React/LearnReact";
 import Blogs from "../../Blogs/Blogs";
+import About from "../../about/About";
+import SassIntegration from "../../Blogs/SassIntegration";
 
 function MyRoutes() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="/" element={<Home />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
 
-      {/* Learning Links */}
+      {/* Learning Links
       <Route path="/learning" element={<Learning />} />
       <Route path="/learning/learn-scss" element={<LearnSCSS />} />
       <Route path="/learning/learn-js" element={<LearnJS />} />
-      <Route path="/learning/learn-react-js" element={<LearnReact />} />
+      <Route path="/learning/learn-react-js" element={<LearnReact />} /> */}
 
       {/* Projects Links */}
       <Route path="/projects" element={<Projects />} />
@@ -28,6 +27,7 @@ function MyRoutes() {
       {/* Blogs Links */}
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blog/stripe-with-react" element={<StripeWithReact />} />
+      <Route path="/blog/sass-integration" element={<SassIntegration />} />
     </Routes>
   );
 }

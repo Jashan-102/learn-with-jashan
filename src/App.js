@@ -5,12 +5,13 @@ import MyRoutes from "./components/Other/routes/MyRoutes";
 
 function App() {
   return (
-    <main>
+    <main className="bg-secondary">
       <MainNavBar />
-
-
-
-      <MyRoutes />
+      <>
+        {/* Routes: */}
+        {/* <BlogRoutes /> */}
+        <MyRoutes />
+      </>
     </main>
   );
 }

@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Card from '../Other/Card'
+import { blogsContent } from '../Other/blogsContent'
 
 export default function Blogs(props) {
   return (
-    <div className="container mx-auto content">
-      <Card
-        cardTitle='Stripe JS with ReactJS'
-        cardDescription='will add soon'
-        linkTo='/blog/stripe-with-react'
-        buttonClasses=""
-        wrapperClasses=""
-      />
+    <div className="container mx-auto ">
+      <div className='grid grid-cols-2 gap-4'>
+        {blogsContent?.map((blog) => <Fragment key={blog.id}><Card blogDetails={blog} /></Fragment>)}
+      </div>
     </div>
   )
 }
