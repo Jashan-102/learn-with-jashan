@@ -1,0 +1,25 @@
+const urlBase = `https://chrome.google.com/webstore/detail/`
+
+export const chromeExtensionContent = [
+  { id: 1, name: 'LocatorJS', link: `${urlBase}locatorjs/npbfdllefekhdplbkdigpncggmojpefi`, },
+  { id: 1, name: 'Absolute Enable Right Click & Copy', link: `${urlBase}absolute-enable-right-cli/jdocbkpgdakpekjlhemmfcncgdjeiika`, },
+  { id: 1, name: 'Awesome ChatGPT Screenshot & Screen Recorder', link: `${urlBase}awesome-chatgpt-screensho/nlipoenfbbikpbjkfpfillcgkoblgpmj`, },
+  { id: 1, name: 'Clear Cache', link: `${urlBase}clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn`, },
+  { id: 1, name: 'ColorPick Eyedropper', link: `${urlBase}colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg`, },
+  { id: 1, name: 'CSS Peeper', link: `${urlBase}css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk`, },
+  { id: 1, name: 'GoFullPage - Full Page Screen Capture', link: `${urlBase}gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl`, },
+  { id: 1, name: 'Google Docs Offline', link: `${urlBase}google-docs-offline/ghbmnnjooekpmoecnnnilnnbdlolhkhi`, },
+  { id: 1, name: 'Grammarly: Grammar Checker and Writing App', link: `${urlBase}grammarly-grammar-checker/kbfnbcaeplbcioakkpcpgfkobkghlhen`, },
+  { id: 1, name: 'Grepper', link: `${urlBase}grepper/amaaokahonnfjjemodnpmeenfpnnbkco`, },
+  { id: 1, name: 'JSON Viewer', link: `${urlBase}json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh`, },
+  { id: 1, name: 'Lighthouse', link: `${urlBase}lighthouse/blipmdconlkpinefehnmjammfjpmpbjk`, },
+  { id: 1, name: 'Lightshot (screenshot tool)', link: `${urlBase}lightshot-screenshot-tool/mbniclmhobmnbdlbpiphghaielnnpgdp`, },
+  { id: 1, name: 'Loom – Screen Recorder & Screen Capture', link: `${urlBase}loom-–-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb`, },
+  { id: 1, name: 'Mobile simulator - responsive testing tool', link: `${urlBase}mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk`, },
+  { id: 1, name: 'React Developer Tools', link: `${urlBase}react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi`, },
+  { id: 1, name: 'Redux DevTools', link: `${urlBase}redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd`, },
+  { id: 1, name: 'Super Simple Highlighter', link: `${urlBase}super-simple-highlighter/hhlhjgianpocpoppaiihmlpgcoehlhio`, },
+  { id: 1, name: 'WhatFont', link: `${urlBase}whatfont/jabopobgcpjmedljpbcaablpmlmfcogm`, },
+  { id: 1, name: 'VisBug', link: `${urlBase}visbug/cdockenadnadldjbbgcallicgledbeoc`, },
+  { id: 1, name: 'Wappalyzer - Technology profiler', link: `${urlBase}wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg`, },
+]
