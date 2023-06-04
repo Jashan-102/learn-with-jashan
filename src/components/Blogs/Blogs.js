@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Card from '../Other/Card'
-import { blogsContent } from '../Other/blogsContent'
+import { blogsContent } from '../Other/content/blogsContent'
 
 export default function Blogs(props) {
   return (

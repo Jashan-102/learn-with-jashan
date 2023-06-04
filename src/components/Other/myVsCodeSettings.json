@@ -1,0 +1,46 @@
+{
+    "editor.tabSize": 2,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "explorer.confirmDelete": false,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.editor.showIcons": false,
+    "editor.fontSize": 14,
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "powermode.explosions.backgroundMode": "image",
+    "powermode.enabled": true,
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.timerEnabled": "hide",
+    "powermode.combo.counterSize": 0,
+    "powermode.shake.enabled": false,
+    "powermode.shake.intensity": 0,
+    "editor.wordWrap": "on",
+    "powermode.presets": "flames",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.guides.bracketPairs": true,
+    "chatgpt.gpt3.apiKey": "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",
+    "codesnap.showLineNumbers": false,
+    "codesnap.showWindowControls": false,
+    "codesnap.containerPadding": "12",
+    "codesnap.roundedCorners": false,
+    "codesnap.boxShadow": "none",
+    "workbench.colorCustomizations": {},
+    "workbench.iconTheme": "material-icon-theme"
+}
