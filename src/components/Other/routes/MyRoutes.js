@@ -7,10 +7,18 @@ import Blogs from "../../Blogs/Blogs";
 import About from "../../about/About";
 import SassIntegration from "../../Blogs/SassIntegration";
 import VsCodeExtension from "../../Blogs/VsCodeExtension";
-import ChromeExtensions from "../../Blogs/ChromeExtensions";
+import { ChromeExtensions,  } from '../../Blogs/index'
 import PureComponents from "../../Blogs/reactJs/PureComponents";
 import RefsInReact from "../../Blogs/reactJs/RefsInReact";
 import LifeCycleMethods from "../../Blogs/reactJs/LifeCycleMethods";
+import HigherOrderComponent from "../../Blogs/reactJs/HigherOrderComponent";
+import ReactDesignPattern from "../../Blogs/reactJs/ReactDesignPattern";
+import BasicsOfReact from "../../Blogs/reactJs/BasicsOfReact";
+import ContextAPI from "../../Blogs/reactJs/ContextAPI";
+import JsBasicsToAdvanced from "../../Blogs/jsBasicsToAdvanced/JsBasicsToAdvanced";
+import FrontendInterview from "../../Blogs/interviews/FrontendInterview";
+import JsInterview from "../../Blogs/interviews/JsInterview";
+import ReactInterview from "../../Blogs/interviews/ReactInterview";
 
 function MyRoutes() {
   return (
@@ -31,13 +39,29 @@ function MyRoutes() {
 
       {/* Blogs Links */}
       <Route path="/blogs" element={<Blogs />} />
-      <Route path="/blog/stripe-with-react" element={<StripeWithReact />} />
+
       <Route path="/blog/sass-integration" element={<SassIntegration />} />
       <Route path="/blog/vs-code-extensions" element={<VsCodeExtension />} />
       <Route path="/blog/chrome-extensions" element={<ChromeExtensions />} />
+
+      {/* react */}
+      <Route path="/blog/stripe-with-react" element={<StripeWithReact />} />
       <Route path="/blog/react/useMemo-pure-components" element={<PureComponents />} />
       <Route path="/blog/react/refs" element={<RefsInReact />} />
       <Route path="/blog/react/life-cycle-methods" element={<LifeCycleMethods />} />
+      <Route path="/blog/react/higher-order-components" element={<HigherOrderComponent />} />
+      <Route path="/blog/react/design-pattern" element={<ReactDesignPattern />} />
+      <Route path="/blog/react/basics" element={<BasicsOfReact />} />
+      <Route path="/blog/react/context-api" element={<ContextAPI />} />
+
+      {/* js */}
+      <Route path="/blog/js/js-basics-advanced" element={<JsBasicsToAdvanced />} />
+
+      {/* interviews */}
+      <Route path="/blog/interview/frontend" element={<FrontendInterview />} />
+      <Route path="/blog/interview/js" element={<JsInterview />} />
+      <Route path="/blog/interview/react-js" element={<ReactInterview />} />
+
     </Routes>
   );
 }
