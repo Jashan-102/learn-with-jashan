@@ -2,23 +2,11 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../../Home/Home";
 import CovidTracker from "../../Projects/CovidTracker/CovidTracker";
 import Projects from "../../Projects/Projects";
-import StripeWithReact from "../../Blogs/StripeWithReact";
 import Blogs from "../../Blogs/Blogs";
 import About from "../../about/About";
-import SassIntegration from "../../Blogs/SassIntegration";
-import VsCodeExtension from "../../Blogs/VsCodeExtension";
-import { ChromeExtensions,  } from '../../Blogs/index'
-import PureComponents from "../../Blogs/reactJs/PureComponents";
-import RefsInReact from "../../Blogs/reactJs/RefsInReact";
-import LifeCycleMethods from "../../Blogs/reactJs/LifeCycleMethods";
-import HigherOrderComponent from "../../Blogs/reactJs/HigherOrderComponent";
-import ReactDesignPattern from "../../Blogs/reactJs/ReactDesignPattern";
-import BasicsOfReact from "../../Blogs/reactJs/BasicsOfReact";
-import ContextAPI from "../../Blogs/reactJs/ContextAPI";
-import JsBasicsToAdvanced from "../../Blogs/jsBasicsToAdvanced/JsBasicsToAdvanced";
-import FrontendInterview from "../../Blogs/interviews/FrontendInterview";
-import JsInterview from "../../Blogs/interviews/JsInterview";
-import ReactInterview from "../../Blogs/interviews/ReactInterview";
+import {
+  StripeWithReact, SassIntegration, VsCodeExtension, ChromeExtensions, PureComponents, RefsInReact, LifeCycleMethods, HigherOrderComponent, ReactDesignPattern, BasicsOfReact, ContextAPI, JsBasicsToAdvanced, FrontendInterview, JsInterview, ReactInterview
+} from '../../Blogs/index'
 
 function MyRoutes() {
   return (
