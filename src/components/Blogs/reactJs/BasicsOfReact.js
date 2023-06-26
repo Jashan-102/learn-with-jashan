@@ -62,6 +62,7 @@ export default function BasicsOfReact() {
       <h6>Forms</h6>
       <h6>Routing</h6>
       <h6>State Management</h6>
+
       <h6>Server-side Rendering (SSR)</h6>
       <p>
         React can be used to render components on the server and send the pre-rendered HTML to the client for faster initial page loads and improved SEO.

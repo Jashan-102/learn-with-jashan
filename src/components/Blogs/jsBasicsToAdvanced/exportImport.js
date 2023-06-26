@@ -1,3 +1,12 @@
+import React from 'react'
+
+export default function ExportImport() {
+  return (
+    <div>exportImport</div>
+  )
+}
+
+
 console.log("ES6 Modules: introduced in ES6[2015] year.");
 console.log(
   "It lead us to use multiple files for our code. i.e, you can split your code among multiple files."
