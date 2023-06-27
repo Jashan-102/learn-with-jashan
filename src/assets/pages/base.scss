@@ -6,3 +6,9 @@
 :target {
   scroll-margin-top: 7rem;
 }
+
+.syntax-highlighter {
+  pre {
+    border-radius: 0.75rem !important;
+  }
+}

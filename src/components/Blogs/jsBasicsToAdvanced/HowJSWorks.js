@@ -4,7 +4,7 @@ import CodeContainer from '../../Other/CodeContainer';
 export default function JSWorks() {
   return (
     <div>
-      <h1>How JS Work and JS code execute?</h1>
+      <h2>How JS Work and JS code execute?</h2>
       <p>
         Their are 2 phases to execute JS code:<br />
         1. Creation Phase or Compilation Phase <br />

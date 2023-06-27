@@ -4,7 +4,7 @@ import CodeContainer from '../../Other/CodeContainer';
 export default function StringInJS() {
   return (
     <div>
-      <h1>String In JS</h1>
+      <h2>String In JS</h2>
       <p>
         <strong>String Methods:</strong>
         The String object is used to represent and manipulate a sequence of characters.<br />

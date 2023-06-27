@@ -4,7 +4,7 @@ import CodeContainer from '../../Other/CodeContainer';
 export default function AsyncInJS() {
   return (
     <div>
-      <h1>Asynchronous JS:</h1>
+      <h2>Asynchronous JS:</h2>
       <p>
         <strong>Synchronous Programming: </strong>
         JS execute step by step As it is a synchronous programming and single threaded language.<br />
