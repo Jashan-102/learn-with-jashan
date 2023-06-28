@@ -297,6 +297,36 @@ changeText2(headings[0], "One", 1000)
   .catch(() => alert("Error"));`}
         </CodeContainer>
       </p>
+      <p>
+        <strong>async await:</strong>
+        <br />It is a way of consuming Promise. async await is a optimized way of using .then()/Promise.
+        <br />Behind the scenes async await also uses .then()/Promise keywords.<br />
+        <strong>async: </strong>
+        This make a normal function to Promise and that function will always return a Promise.This function will work asynchronously means by browser.<br />
+        <strong>await: </strong> This is like .then() after resolve. This will wait for Promise to be resolved or reject. As prior we use .then()/.catch(). Here we use await.
+        <CodeContainer>
+          {`// handle promise using async await
+async function getPost(URL) {
+  const response = await fetch(URL);
+  const data = await response.json();
+  return data;
+}
+
+// handle promise using .then
+getPost(URL)
+  .then((data) => {
+    console.log("async await", data);
+  })
+  .catch((error) => {
+    console.log("Network Error");
+  });
+`}
+        </CodeContainer>
+        <strong>async await with arrow function:</strong>
+        <CodeContainer>
+          {`const myFunc = async () => { };`}
+        </CodeContainer>
+      </p>
     </div>
   )
 }

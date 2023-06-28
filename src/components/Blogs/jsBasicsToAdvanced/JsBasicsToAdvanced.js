@@ -4,6 +4,7 @@ import AsyncInJS from './AsyncInJS'
 import JSWorks from './HowJSWorks'
 import ExportImportModules from './ExportImportModules'
 import JSDOM from './JSDOM'
+import ObjectsInJS from './ObjectsInJS'
 
 export default function JsBasicsToAdvanced() {
   return (
@@ -14,6 +15,7 @@ export default function JsBasicsToAdvanced() {
       <AsyncInJS />
       <StringInJS />
       <ExportImportModules />
+      <ObjectsInJS />
     </div>
   )
 }

@@ -7,8 +7,8 @@ export default function Card(props) {
     <Link to={linkTo}>
       <div className={`card bg-light border border-gray space-y-6 ${wrapperClasses}`}>
         <div className={`card-body`}>
-          <h2 className="card-title">{title}</h2>
-          <p>{description}</p>
+          <h4 className="card-title mt-0">{title}</h4>
+          {/* <p>{description}</p> */}
         </div>
       </div>
     </Link>
